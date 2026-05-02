@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cem Ayyıldız | Sui & Move Developer</title>
-    <meta name="description" content="Blockchain Developer specializing in Sui Move development. Turkey's first Sui Move Bootcamp graduate, hackathon winner, and workshop assistant.">
+    <title>Cem Ayyıldız | Full Stack Developer</title>
+    <meta name="description" content="Full Stack Developer specializing in AI-powered systems, Web3 integrations, and scalable backend architectures. Building production-grade applications serving 40,000+ users.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --sui-primary: #4DA2FF;
-            --sui-secondary: #6FBCFF;
-            --sui-accent: #00D9FF;
-            --sui-dark: #0A1628;
-            --sui-darker: #050D18;
-            --sui-gradient: linear-gradient(135deg, #4DA2FF 0%, #6FBCFF 50%, #00D9FF 100%);
-            --sui-glow: 0 0 60px rgba(77, 162, 255, 0.3);
-            --text-primary: #FFFFFF;
-            --text-secondary: #A0B3C8;
-            --text-muted: #5A6A7A;
-            --card-bg: rgba(10, 22, 40, 0.8);
-            --border-color: rgba(77, 162, 255, 0.2);
+            --primary: #6366F1;
+            --primary-light: #818CF8;
+            --primary-dark: #4F46E5;
+            --accent: #06B6D4;
+            --accent-light: #22D3EE;
+            --bg-dark: #0F172A;
+            --bg-darker: #020617;
+            --bg-card: rgba(15, 23, 42, 0.8);
+            --text-primary: #F8FAFC;
+            --text-secondary: #94A3B8;
+            --text-muted: #64748B;
+            --border-color: rgba(99, 102, 241, 0.2);
+            --gradient: linear-gradient(135deg, #6366F1 0%, #8B5CF6 50%, #06B6D4 100%);
+            --gradient-subtle: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
+            --glow: 0 0 60px rgba(99, 102, 241, 0.3);
         }
 
         * {
@@ -36,8 +39,8 @@
         }
 
         body {
-            font-family: 'Space Grotesk', sans-serif;
-            background: var(--sui-darker);
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-darker);
             color: var(--text-primary);
             line-height: 1.6;
             overflow-x: hidden;
@@ -52,9 +55,9 @@
             height: 100%;
             z-index: -1;
             background: 
-                radial-gradient(ellipse at 20% 20%, rgba(77, 162, 255, 0.15) 0%, transparent 50%),
-                radial-gradient(ellipse at 80% 80%, rgba(0, 217, 255, 0.1) 0%, transparent 50%),
-                radial-gradient(ellipse at 50% 50%, rgba(111, 188, 255, 0.05) 0%, transparent 70%);
+                radial-gradient(ellipse at 20% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(6, 182, 212, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(139, 92, 246, 0.05) 0%, transparent 70%);
         }
 
         .floating-particles {
@@ -69,7 +72,7 @@
             position: absolute;
             width: 4px;
             height: 4px;
-            background: var(--sui-primary);
+            background: var(--primary);
             border-radius: 50%;
             opacity: 0.3;
             animation: float 20s infinite ease-in-out;
@@ -88,35 +91,36 @@
             top: 0;
             left: 0;
             right: 0;
-            padding: 1.5rem 5%;
+            padding: 1.25rem 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             z-index: 1000;
-            background: rgba(5, 13, 24, 0.9);
+            background: rgba(2, 6, 23, 0.85);
             backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--border-color);
         }
 
         .logo {
             font-size: 1.5rem;
-            font-weight: 700;
-            background: var(--sui-gradient);
+            font-weight: 800;
+            background: var(--gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            letter-spacing: -0.5px;
         }
 
         .nav-links {
             display: flex;
-            gap: 2.5rem;
+            gap: 2rem;
             list-style: none;
         }
 
         .nav-links a {
             color: var(--text-secondary);
             text-decoration: none;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             font-weight: 500;
             transition: all 0.3s ease;
             position: relative;
@@ -129,7 +133,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: var(--sui-gradient);
+            background: var(--gradient);
             transition: width 0.3s ease;
         }
 
@@ -143,11 +147,12 @@
 
         .nav-cta {
             padding: 0.75rem 1.5rem;
-            background: var(--sui-gradient);
-            color: var(--sui-dark);
+            background: var(--gradient);
+            color: white;
             border: none;
-            border-radius: 8px;
+            border-radius: 10px;
             font-weight: 600;
+            font-size: 0.9rem;
             cursor: pointer;
             transition: all 0.3s ease;
             text-decoration: none;
@@ -155,7 +160,24 @@
 
         .nav-cta:hover {
             transform: translateY(-2px);
-            box-shadow: var(--sui-glow);
+            box-shadow: var(--glow);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .mobile-menu-btn span {
+            width: 25px;
+            height: 2px;
+            background: var(--text-primary);
+            transition: all 0.3s ease;
         }
 
         /* Hero Section */
@@ -181,18 +203,18 @@
             align-items: center;
             gap: 0.5rem;
             padding: 0.5rem 1rem;
-            background: rgba(77, 162, 255, 0.1);
+            background: rgba(99, 102, 241, 0.1);
             border: 1px solid var(--border-color);
             border-radius: 50px;
             font-size: 0.85rem;
-            color: var(--sui-accent);
+            color: var(--accent);
             margin-bottom: 1.5rem;
             animation: pulse 2s infinite;
         }
 
         @keyframes pulse {
-            0%, 100% { box-shadow: 0 0 0 0 rgba(77, 162, 255, 0.4); }
-            50% { box-shadow: 0 0 20px 5px rgba(77, 162, 255, 0.1); }
+            0%, 100% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.4); }
+            50% { box-shadow: 0 0 20px 5px rgba(99, 102, 241, 0.1); }
         }
 
         .hero-badge .dot {
@@ -210,23 +232,25 @@
 
         .hero h1 {
             font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 700;
+            font-weight: 800;
             line-height: 1.1;
             margin-bottom: 1.5rem;
+            letter-spacing: -1px;
         }
 
         .hero h1 .highlight {
-            background: var(--sui-gradient);
+            background: var(--gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
         .hero-subtitle {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             color: var(--text-secondary);
             margin-bottom: 2rem;
             max-width: 600px;
+            line-height: 1.7;
         }
 
         .hero-stats {
@@ -241,15 +265,15 @@
 
         .stat-number {
             font-size: 2.5rem;
-            font-weight: 700;
-            background: var(--sui-gradient);
+            font-weight: 800;
+            background: var(--gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
         .stat-label {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -263,10 +287,10 @@
 
         .btn-primary {
             padding: 1rem 2rem;
-            background: var(--sui-gradient);
-            color: var(--sui-dark);
+            background: var(--gradient);
+            color: white;
             border: none;
-            border-radius: 10px;
+            border-radius: 12px;
             font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
@@ -279,7 +303,7 @@
 
         .btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: var(--sui-glow);
+            box-shadow: var(--glow);
         }
 
         .btn-secondary {
@@ -287,7 +311,7 @@
             background: transparent;
             color: var(--text-primary);
             border: 2px solid var(--border-color);
-            border-radius: 10px;
+            border-radius: 12px;
             font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
@@ -299,8 +323,8 @@
         }
 
         .btn-secondary:hover {
-            border-color: var(--sui-primary);
-            background: rgba(77, 162, 255, 0.1);
+            border-color: var(--primary);
+            background: rgba(99, 102, 241, 0.1);
         }
 
         /* Hero Visual */
@@ -312,15 +336,15 @@
         }
 
         .code-block {
-            background: var(--card-bg);
+            background: var(--bg-card);
             border: 1px solid var(--border-color);
-            border-radius: 16px;
+            border-radius: 20px;
             padding: 2rem;
             font-family: 'JetBrains Mono', monospace;
             font-size: 0.85rem;
             position: relative;
             backdrop-filter: blur(10px);
-            box-shadow: var(--sui-glow);
+            box-shadow: var(--glow);
         }
 
         .code-header {
@@ -349,13 +373,13 @@
         .code-content .string { color: #C3E88D; }
         .code-content .type { color: #FFCB6B; }
         .code-content .comment { color: #546E7A; }
-        .code-content .sui { color: #4DA2FF; }
+        .code-content .accent { color: var(--accent); }
 
         /* Floating Elements */
         .floating-badge {
             position: absolute;
             padding: 0.75rem 1.25rem;
-            background: var(--card-bg);
+            background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: 12px;
             font-size: 0.85rem;
@@ -398,11 +422,11 @@
         .section-label {
             display: inline-block;
             padding: 0.5rem 1rem;
-            background: rgba(77, 162, 255, 0.1);
+            background: rgba(99, 102, 241, 0.1);
             border: 1px solid var(--border-color);
             border-radius: 50px;
             font-size: 0.85rem;
-            color: var(--sui-accent);
+            color: var(--accent);
             margin-bottom: 1rem;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -410,8 +434,9 @@
 
         .section-title {
             font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 700;
+            font-weight: 800;
             margin-bottom: 1rem;
+            letter-spacing: -0.5px;
         }
 
         .section-subtitle {
@@ -429,7 +454,7 @@
         }
 
         .experience-card {
-            background: var(--card-bg);
+            background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: 20px;
             padding: 2.5rem;
@@ -445,15 +470,15 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: var(--sui-gradient);
+            background: var(--gradient);
             opacity: 0;
             transition: opacity 0.3s ease;
         }
 
         .experience-card:hover {
             transform: translateY(-5px);
-            border-color: var(--sui-primary);
-            box-shadow: var(--sui-glow);
+            border-color: var(--primary);
+            box-shadow: var(--glow);
         }
 
         .experience-card:hover::before {
@@ -463,7 +488,7 @@
         .experience-icon {
             width: 60px;
             height: 60px;
-            background: rgba(77, 162, 255, 0.1);
+            background: rgba(99, 102, 241, 0.1);
             border-radius: 16px;
             display: flex;
             align-items: center;
@@ -473,37 +498,45 @@
 
         .experience-icon i {
             font-size: 1.5rem;
-            color: var(--sui-primary);
+            color: var(--primary);
         }
 
         .experience-card h3 {
             font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .experience-card .company {
+            color: var(--accent);
+            font-size: 0.9rem;
             margin-bottom: 0.75rem;
         }
 
         .experience-card p {
             color: var(--text-secondary);
             margin-bottom: 1rem;
+            line-height: 1.7;
         }
 
         .experience-tag {
             display: inline-block;
             padding: 0.35rem 0.75rem;
-            background: rgba(77, 162, 255, 0.15);
+            background: rgba(99, 102, 241, 0.15);
             border-radius: 6px;
             font-size: 0.8rem;
-            color: var(--sui-accent);
+            color: var(--accent);
         }
 
         /* Projects Section */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
             gap: 2rem;
         }
 
         .project-card {
-            background: var(--card-bg);
+            background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: 20px;
             overflow: hidden;
@@ -512,13 +545,13 @@
 
         .project-card:hover {
             transform: translateY(-5px);
-            border-color: var(--sui-primary);
-            box-shadow: var(--sui-glow);
+            border-color: var(--primary);
+            box-shadow: var(--glow);
         }
 
         .project-image {
             height: 200px;
-            background: linear-gradient(135deg, rgba(77, 162, 255, 0.2), rgba(0, 217, 255, 0.1));
+            background: var(--gradient-subtle);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -531,7 +564,7 @@
             position: absolute;
             width: 200px;
             height: 200px;
-            background: var(--sui-gradient);
+            background: var(--gradient);
             border-radius: 50%;
             filter: blur(80px);
             opacity: 0.3;
@@ -539,7 +572,7 @@
 
         .project-image i {
             font-size: 4rem;
-            color: var(--sui-primary);
+            color: var(--primary);
             z-index: 1;
         }
 
@@ -571,11 +604,13 @@
         .project-card h3 {
             font-size: 1.5rem;
             margin-bottom: 0.75rem;
+            font-weight: 700;
         }
 
         .project-card p {
             color: var(--text-secondary);
             margin-bottom: 1.5rem;
+            line-height: 1.7;
         }
 
         .project-tech {
@@ -587,7 +622,7 @@
 
         .tech-tag {
             padding: 0.35rem 0.75rem;
-            background: rgba(77, 162, 255, 0.1);
+            background: rgba(99, 102, 241, 0.1);
             border: 1px solid var(--border-color);
             border-radius: 6px;
             font-size: 0.8rem;
@@ -603,7 +638,7 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            color: var(--sui-primary);
+            color: var(--primary);
             text-decoration: none;
             font-size: 0.9rem;
             font-weight: 500;
@@ -611,7 +646,7 @@
         }
 
         .project-link:hover {
-            color: var(--sui-accent);
+            color: var(--accent);
         }
 
         /* Skills Section */
@@ -622,7 +657,7 @@
         }
 
         .skill-category {
-            background: var(--card-bg);
+            background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: 20px;
             padding: 2rem;
@@ -630,11 +665,12 @@
 
         .skill-category h3 {
             font-size: 1.1rem;
-            color: var(--sui-accent);
+            color: var(--accent);
             margin-bottom: 1.5rem;
             display: flex;
             align-items: center;
             gap: 0.75rem;
+            font-weight: 700;
         }
 
         .skill-list {
@@ -645,7 +681,7 @@
 
         .skill-item {
             padding: 0.5rem 1rem;
-            background: rgba(77, 162, 255, 0.1);
+            background: rgba(99, 102, 241, 0.1);
             border: 1px solid var(--border-color);
             border-radius: 8px;
             font-size: 0.9rem;
@@ -653,13 +689,13 @@
         }
 
         .skill-item:hover {
-            background: rgba(77, 162, 255, 0.2);
-            border-color: var(--sui-primary);
+            background: rgba(99, 102, 241, 0.2);
+            border-color: var(--primary);
         }
 
         .skill-item.highlight {
-            background: var(--sui-gradient);
-            color: var(--sui-dark);
+            background: var(--gradient);
+            color: white;
             border: none;
             font-weight: 600;
         }
@@ -677,22 +713,22 @@
             top: 0;
             bottom: 0;
             width: 2px;
-            background: var(--sui-gradient);
+            background: var(--gradient);
         }
 
         .achievement-item {
             position: relative;
             margin-bottom: 3rem;
             padding: 2rem;
-            background: var(--card-bg);
+            background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: 16px;
             transition: all 0.3s ease;
         }
 
         .achievement-item:hover {
-            border-color: var(--sui-primary);
-            box-shadow: var(--sui-glow);
+            border-color: var(--primary);
+            box-shadow: var(--glow);
         }
 
         .achievement-item::before {
@@ -702,24 +738,27 @@
             top: 2rem;
             width: 16px;
             height: 16px;
-            background: var(--sui-gradient);
+            background: var(--gradient);
             border-radius: 50%;
-            border: 4px solid var(--sui-dark);
+            border: 4px solid var(--bg-darker);
         }
 
         .achievement-date {
             font-size: 0.85rem;
-            color: var(--sui-accent);
+            color: var(--accent);
             margin-bottom: 0.5rem;
+            font-weight: 600;
         }
 
         .achievement-item h3 {
             font-size: 1.25rem;
             margin-bottom: 0.5rem;
+            font-weight: 700;
         }
 
         .achievement-item p {
             color: var(--text-secondary);
+            line-height: 1.7;
         }
 
         .achievement-badge {
@@ -746,12 +785,14 @@
         .contact-info h2 {
             font-size: 2.5rem;
             margin-bottom: 1.5rem;
+            font-weight: 800;
         }
 
         .contact-info p {
             color: var(--text-secondary);
             font-size: 1.1rem;
             margin-bottom: 2rem;
+            line-height: 1.7;
         }
 
         .contact-links {
@@ -765,7 +806,7 @@
             align-items: center;
             gap: 1rem;
             padding: 1rem 1.5rem;
-            background: var(--card-bg);
+            background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: 12px;
             color: var(--text-primary);
@@ -774,20 +815,20 @@
         }
 
         .contact-link:hover {
-            border-color: var(--sui-primary);
-            background: rgba(77, 162, 255, 0.1);
+            border-color: var(--primary);
+            background: rgba(99, 102, 241, 0.1);
             transform: translateX(10px);
         }
 
         .contact-link i {
             width: 40px;
             height: 40px;
-            background: rgba(77, 162, 255, 0.1);
+            background: rgba(99, 102, 241, 0.1);
             border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--sui-primary);
+            color: var(--primary);
         }
 
         .contact-visual {
@@ -796,7 +837,7 @@
             align-items: center;
         }
 
-        .sui-logo-container {
+        .logo-container {
             position: relative;
             width: 300px;
             height: 300px;
@@ -805,12 +846,12 @@
             justify-content: center;
         }
 
-        .sui-logo-container::before {
+        .logo-container::before {
             content: '';
             position: absolute;
             width: 100%;
             height: 100%;
-            background: var(--sui-gradient);
+            background: var(--gradient);
             border-radius: 50%;
             filter: blur(60px);
             opacity: 0.3;
@@ -822,10 +863,10 @@
             50% { transform: scale(1.1); opacity: 0.5; }
         }
 
-        .sui-text {
-            font-size: 6rem;
-            font-weight: 700;
-            background: var(--sui-gradient);
+        .logo-text {
+            font-size: 5rem;
+            font-weight: 800;
+            background: var(--gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -854,7 +895,7 @@
         }
 
         .footer-text span {
-            color: var(--sui-primary);
+            color: var(--primary);
         }
 
         .social-links {
@@ -865,7 +906,7 @@
         .social-link {
             width: 45px;
             height: 45px;
-            background: var(--card-bg);
+            background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: 12px;
             display: flex;
@@ -877,27 +918,9 @@
         }
 
         .social-link:hover {
-            border-color: var(--sui-primary);
-            color: var(--sui-primary);
+            border-color: var(--primary);
+            color: var(--primary);
             transform: translateY(-3px);
-        }
-
-        /* Mobile Menu */
-        .mobile-menu-btn {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 5px;
-        }
-
-        .mobile-menu-btn span {
-            width: 25px;
-            height: 2px;
-            background: var(--text-primary);
-            transition: all 0.3s ease;
         }
 
         /* Responsive */
@@ -1009,7 +1032,7 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="mailto:ayyldz1925@gmail.com" class="nav-cta">Let's Talk</a>
+        <a href="mailto:ayyldz1925@gmail.com" class="nav-cta">Get in Touch</a>
         <button class="mobile-menu-btn" aria-label="Toggle menu">
             <span></span>
             <span></span>
@@ -1023,28 +1046,27 @@
             <div class="hero-text">
                 <div class="hero-badge">
                     <span class="dot"></span>
-                    Available for Internship
+                    Full Stack Developer
                 </div>
                 <h1>
-                    Building the Future on<br>
-                    <span class="highlight">Sui Blockchain</span>
+                    Building Production-Grade<br>
+                    <span class="highlight">Software Solutions</span>
                 </h1>
                 <p class="hero-subtitle">
-                    Computer Engineer & Blockchain Developer specializing in Sui Move development. 
-                    Turkey's first Sui Move Bootcamp graduate with production-ready dApps running on mainnet.
+                    Full Stack Developer specializing in AI-powered multi-agent systems, Web3 integrations, and scalable backend architectures. Building production systems serving 40,000+ active users.
                 </p>
                 <div class="hero-stats">
                     <div class="stat">
-                        <div class="stat-number">2</div>
-                        <div class="stat-label">Hackathons</div>
+                        <div class="stat-number">40K+</div>
+                        <div class="stat-label">Active Users</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-number">2nd</div>
-                        <div class="stat-label">Place Winner</div>
+                        <div class="stat-number">6+</div>
+                        <div class="stat-label">Projects</div>
                     </div>
                     <div class="stat">
                         <div class="stat-number">1</div>
-                        <div class="stat-label">Mainnet dApp</div>
+                        <div class="stat-label">NPM Package</div>
                     </div>
                 </div>
                 <div class="hero-buttons">
@@ -1066,28 +1088,25 @@
                         <span class="code-dot green"></span>
                     </div>
                     <div class="code-content">
-                        <span class="comment">// Building on Sui</span><br><br>
-                        <span class="keyword">module</span> <span class="sui">pollar</span>::<span class="function">voting</span> {<br>
-                        &nbsp;&nbsp;<span class="keyword">use</span> sui::object::{<span class="type">Self</span>, <span class="type">UID</span>};<br>
-                        &nbsp;&nbsp;<span class="keyword">use</span> sui::transfer;<br><br>
-                        &nbsp;&nbsp;<span class="keyword">struct</span> <span class="type">Poll</span> <span class="keyword">has</span> key, store {<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;id: <span class="type">UID</span>,<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;title: <span class="type">String</span>,<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;votes: <span class="type">vector</span>&lt;<span class="type">u64</span>&gt;<br>
-                        &nbsp;&nbsp;}<br><br>
-                        &nbsp;&nbsp;<span class="keyword">public fun</span> <span class="function">create_poll</span>(<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;ctx: &<span class="keyword">mut</span> <span class="type">TxContext</span><br>
-                        &nbsp;&nbsp;): <span class="type">Poll</span> { ... }<br>
-                        }
+                        <span class="comment">// Building scalable systems</span><br><br>
+                        <span class="keyword">const</span> <span class="function">developer</span> = {<br>
+                        &nbsp;&nbsp;name: <span class="string">"Cem Ayyıldız"</span>,<br>
+                        &nbsp;&nbsp;role: <span class="string">"Full Stack Developer"</span>,<br>
+                        &nbsp;&nbsp;skills: [<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"React"</span>, <span class="string">"Node.js"</span>,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"TypeScript"</span>, <span class="string">"Web3"</span><br>
+                        &nbsp;&nbsp;],<br>
+                        &nbsp;&nbsp;passion: <span class="string">"Building the future"</span><br>
+                        };
                     </div>
                 </div>
                 <div class="floating-badge top-right">
                     <i class="fas fa-check-circle" style="color: #00FF88;"></i>
-                    <span>Mainnet Live</span>
+                    <span>Production Ready</span>
                 </div>
                 <div class="floating-badge bottom-left">
-                    <i class="fas fa-trophy" style="color: #FFD700;"></i>
-                    <span>Hackathon Winner</span>
+                    <i class="fas fa-users" style="color: #FFD700;"></i>
+                    <span>40K+ Users</span>
                 </div>
             </div>
         </div>
@@ -1097,35 +1116,38 @@
     <section id="experience">
         <div class="section-header reveal">
             <span class="section-label">Experience</span>
-            <h2 class="section-title">Sui Ecosystem Journey</h2>
+            <h2 class="section-title">Professional Journey</h2>
             <p class="section-subtitle">
-                From bootcamp graduate to hackathon winner and workshop assistant
+                Building production-level systems and contributing to impactful projects
             </p>
         </div>
         <div class="experience-grid">
             <div class="experience-card reveal">
                 <div class="experience-icon">
-                    <i class="fas fa-graduation-cap"></i>
+                    <i class="fas fa-briefcase"></i>
                 </div>
-                <h3>Turkey's First Sui Move Bootcamp</h3>
-                <p>One of the pioneer graduates of Turkey's first official Sui Move Bootcamp, gaining deep expertise in Move language and Sui blockchain architecture.</p>
-                <span class="experience-tag">Bootcamp Graduate</span>
+                <h3>Full Stack Developer</h3>
+                <p class="company">OverBlock – Izmir | Jul 2025 – Present</p>
+                <p>Contributing to fullstack development across multiple projects. Building backend APIs and frontend interfaces, working on blockchain-integrated systems, and handling production-level deployments.</p>
+                <span class="experience-tag">Full Stack</span>
             </div>
             <div class="experience-card reveal">
                 <div class="experience-icon">
-                    <i class="fas fa-chalkboard-teacher"></i>
+                    <i class="fas fa-robot"></i>
                 </div>
-                <h3>Sui Workshop Assistant</h3>
-                <p>Assisted in conducting Sui workshops, helping developers understand Move programming, smart contract development, and Sui ecosystem fundamentals.</p>
-                <span class="experience-tag">Workshop Assistant</span>
+                <h3>AI Multi-Agent Systems</h3>
+                <p class="company">Bountylane Project</p>
+                <p>Built an AI-powered platform where agents assign tasks to each other. Designed end-to-end backend and frontend architecture with optimized multi-agent workflows and data structures.</p>
+                <span class="experience-tag">AI & ML</span>
             </div>
             <div class="experience-card reveal">
                 <div class="experience-icon">
-                    <i class="fas fa-trophy"></i>
+                    <i class="fas fa-cubes"></i>
                 </div>
-                <h3>Hackathon Achievements</h3>
-                <p>Participated in 2 Sui hackathons, securing 2nd place with the Pollar project - a decentralized voting platform now live on mainnet.</p>
-                <span class="experience-tag">2nd Place Winner</span>
+                <h3>Web3 Development</h3>
+                <p class="company">Somiverse & Mantle-402</p>
+                <p>Developed smart contracts for NFT and swap functionalities. Contributed to a platform with 40,000+ active users, resolved critical system issues, and improved mobile experience with PWA conversion.</p>
+                <span class="experience-tag">Web3</span>
             </div>
         </div>
     </section>
@@ -1136,58 +1158,33 @@
             <span class="section-label">Projects</span>
             <h2 class="section-title">Featured Work</h2>
             <p class="section-subtitle">
-                Production-ready dApps built on Sui blockchain
+                Production-ready applications and innovative solutions
             </p>
         </div>
         <div class="projects-grid">
             <div class="project-card reveal">
                 <div class="project-image">
-                    <i class="fas fa-vote-yea"></i>
+                    <i class="fas fa-robot"></i>
                 </div>
                 <div class="project-content">
                     <div class="project-status">
                         <span class="dot"></span>
-                        Live on Mainnet
+                        Live Demo
                     </div>
-                    <h3>Pollar</h3>
-                    <p>Decentralized voting platform built on Sui blockchain. Create, participate, and verify polls with full transparency and immutability. Real-time vote tracking and cryptographic verification.</p>
+                    <h3>Bountylane</h3>
+                    <p>AI-powered platform where agents assign tasks to each other. End-to-end backend and frontend architecture with optimized multi-agent workflows.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">Sui</span>
-                        <span class="tech-tag">Move</span>
+                        <span class="tech-tag">AI</span>
+                        <span class="tech-tag">Multi-Agent</span>
                         <span class="tech-tag">TypeScript</span>
                         <span class="tech-tag">React</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/CemAyyildiz/Pollar" target="_blank" class="project-link">
+                        <a href="https://github.com/CemAyyildiz" target="_blank" class="project-link">
                             <i class="fab fa-github"></i>
                             Source Code
                         </a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card reveal">
-                <div class="project-image">
-                    <i class="fas fa-pen-fancy"></i>
-                </div>
-                <div class="project-content">
-                    <div class="project-status">
-                        <span class="dot"></span>
-                        Live Demo Available
-                    </div>
-                    <h3>WriteBlock</h3>
-                    <p>Decentralized blogging platform with Walrus storage integration. Write, publish, and permanently store articles on-chain with role-based access control and collaborative editing features.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Sui</span>
-                        <span class="tech-tag">Move</span>
-                        <span class="tech-tag">Walrus</span>
-                        <span class="tech-tag">Next.js</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/CemAyyildiz/WriteBlock" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i>
-                            Source Code
-                        </a>
-                        <a href="https://writeblock.vercel.app" target="_blank" class="project-link">
+                        <a href="#" class="project-link">
                             <i class="fas fa-external-link-alt"></i>
                             Live Demo
                         </a>
@@ -1196,25 +1193,25 @@
             </div>
             <div class="project-card reveal">
                 <div class="project-image">
-                    <i class="fas fa-link"></i>
+                    <i class="fas fa-globe"></i>
                 </div>
                 <div class="project-content">
                     <div class="project-status">
                         <span class="dot"></span>
-                        Active Development
+                        40K+ Users
                     </div>
-                    <h3>SuiTree</h3>
-                    <p>Link aggregator platform on Sui with premium link features. Profile management, username resolution, and Walrus Sites deployment for a complete decentralized identity solution.</p>
+                    <h3>Somiverse</h3>
+                    <p>Developed smart contracts for NFT and swap functionalities. Contributed to a platform with 40,000+ active users. Improved mobile experience with PWA conversion.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">Sui</span>
-                        <span class="tech-tag">Move</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">Walrus</span>
+                        <span class="tech-tag">Web3</span>
+                        <span class="tech-tag">Smart Contracts</span>
+                        <span class="tech-tag">PWA</span>
+                        <span class="tech-tag">React</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/CemAyyildiz/SuiTree" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i>
-                            Source Code
+                        <a href="https://somiverse.live" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Platform
                         </a>
                     </div>
                 </div>
@@ -1226,7 +1223,7 @@
                 <div class="project-content">
                     <div class="project-status">
                         <span class="dot"></span>
-                        Live on Mainnet
+                        Live
                     </div>
                     <h3>Mapmark</h3>
                     <p>Decentralized location bookmarking platform on Sui blockchain. Save, share, and discover meaningful locations with on-chain storage and community-driven features.</p>
@@ -1246,20 +1243,86 @@
             </div>
             <div class="project-card reveal">
                 <div class="project-image">
-                    <i class="fas fa-images"></i>
+                    <i class="fas fa-box"></i>
                 </div>
                 <div class="project-content">
-                    <h3>Sui NFT Workshop</h3>
-                    <p>NFT minting workshop project demonstrating Sui's object-centric model. Hands-on examples of NFT creation, transfer, and marketplace interactions using Move.</p>
+                    <div class="project-status">
+                        <span class="dot"></span>
+                        Published
+                    </div>
+                    <h3>Mantle-402</h3>
+                    <p>Developed a 402 Payment Required-based payment system on Mantle network. Published an npm package for easy developer integration with modular Web3 payment flows.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">Sui</span>
-                        <span class="tech-tag">Move</span>
-                        <span class="tech-tag">NFT</span>
+                        <span class="tech-tag">npm</span>
+                        <span class="tech-tag">Mantle</span>
+                        <span class="tech-tag">Web3</span>
+                        <span class="tech-tag">Payments</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/CemAyyildiz/workshop_nft" target="_blank" class="project-link">
+                        <a href="https://www.npmjs.com/package/mantle-402" target="_blank" class="project-link">
+                            <i class="fab fa-npm"></i>
+                            npm Package
+                        </a>
+                        <a href="https://github.com/CemAyyildiz" target="_blank" class="project-link">
                             <i class="fab fa-github"></i>
                             Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <i class="fas fa-pen-fancy"></i>
+                </div>
+                <div class="project-content">
+                    <div class="project-status">
+                        <span class="dot"></span>
+                        Live Demo
+                    </div>
+                    <h3>WriteBlock</h3>
+                    <p>Decentralized content platform using Move. Optimized on-chain data structures for efficient content management and storage.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Move</span>
+                        <span class="tech-tag">Blockchain</span>
+                        <span class="tech-tag">TypeScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/CemAyyildiz" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <div class="project-content">
+                    <div class="project-status">
+                        <span class="dot"></span>
+                        Live Demo
+                    </div>
+                    <h3>Restaurant Order System</h3>
+                    <p>Real-time order tracking system with fullstack architecture. End-to-end development for seamless restaurant management.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Real-time</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/CemAyyildiz" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            Source Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
                         </a>
                     </div>
                 </div>
@@ -1273,50 +1336,49 @@
             <span class="section-label">Skills</span>
             <h2 class="section-title">Technical Expertise</h2>
             <p class="section-subtitle">
-                Specialized in Sui & Move with full-stack development capabilities
+                Full-stack development and blockchain technologies
             </p>
         </div>
         <div class="skills-container">
             <div class="skill-category reveal">
+                <h3><i class="fas fa-code"></i> Frontend</h3>
+                <div class="skill-list">
+                    <span class="skill-item highlight">React</span>
+                    <span class="skill-item highlight">Next.js</span>
+                    <span class="skill-item">TypeScript</span>
+                    <span class="skill-item">JavaScript</span>
+                    <span class="skill-item">HTML/CSS</span>
+                    <span class="skill-item">Tailwind</span>
+                </div>
+            </div>
+            <div class="skill-category reveal">
+                <h3><i class="fas fa-server"></i> Backend</h3>
+                <div class="skill-list">
+                    <span class="skill-item highlight">Node.js</span>
+                    <span class="skill-item highlight">Express.js</span>
+                    <span class="skill-item">REST APIs</span>
+                    <span class="skill-item">PostgreSQL</span>
+                    <span class="skill-item">Supabase</span>
+                </div>
+            </div>
+            <div class="skill-category reveal">
                 <h3><i class="fas fa-cube"></i> Blockchain</h3>
                 <div class="skill-list">
-                    <span class="skill-item highlight">Sui</span>
+                    <span class="skill-item highlight">Solidity</span>
                     <span class="skill-item highlight">Move</span>
-                    <span class="skill-item">Walrus Protocol</span>
-                    <span class="skill-item">Solidity</span>
-                    <span class="skill-item">Web3.js</span>
+                    <span class="skill-item">Web3</span>
                     <span class="skill-item">Smart Contracts</span>
                 </div>
             </div>
             <div class="skill-category reveal">
-                <h3><i class="fas fa-code"></i> Frontend</h3>
-                <div class="skill-list">
-                    <span class="skill-item">TypeScript</span>
-                    <span class="skill-item">React</span>
-                    <span class="skill-item">Next.js</span>
-                    <span class="skill-item">TailwindCSS</span>
-                    <span class="skill-item">JavaScript</span>
-                </div>
-            </div>
-            <div class="skill-category reveal">
-                <h3><i class="fas fa-server"></i> Backend & Others</h3>
+                <h3><i class="fas fa-tools"></i> Languages & Tools</h3>
                 <div class="skill-list">
                     <span class="skill-item">Java</span>
                     <span class="skill-item">Python</span>
                     <span class="skill-item">C#</span>
                     <span class="skill-item">SQL</span>
-                    <span class="skill-item">Node.js</span>
                     <span class="skill-item">Git</span>
-                </div>
-            </div>
-            <div class="skill-category reveal">
-                <h3><i class="fas fa-brain"></i> Concepts</h3>
-                <div class="skill-list">
-                    <span class="skill-item">Object-Oriented Model</span>
-                    <span class="skill-item">Data Structures</span>
-                    <span class="skill-item">DeFi</span>
-                    <span class="skill-item">dApp Development</span>
-                    <span class="skill-item">Wallet Integration</span>
+                    <span class="skill-item">Vercel</span>
                 </div>
             </div>
         </div>
@@ -1328,46 +1390,50 @@
             <span class="section-label">Achievements</span>
             <h2 class="section-title">Milestones</h2>
             <p class="section-subtitle">
-                Key accomplishments in the Sui ecosystem
+                Key moments in my professional journey
             </p>
         </div>
         <div class="achievements-timeline">
             <div class="achievement-item reveal">
+                <div class="achievement-date">2025 – Present</div>
+                <h3>OverBlock – Full Stack Developer</h3>
+                <p>Contributing to fullstack development, building backend APIs and frontend interfaces. Working on blockchain-integrated systems and handling production-level deployments.</p>
+                <div class="achievement-badge">
+                    <i class="fas fa-briefcase"></i>
+                    Current Position
+                </div>
+            </div>
+            <div class="achievement-item reveal">
                 <div class="achievement-date">2025</div>
-                <h3>Pollar - Mainnet Deployment</h3>
-                <p>Successfully deployed the Pollar voting platform to Sui mainnet, making it one of the first Turkish-developed dApps live on Sui.</p>
+                <h3>Somiverse – 40K+ Active Users</h3>
+                <p>Contributed to a platform with 40,000+ active users. Resolved critical system issues and improved mobile experience by converting the app into a PWA.</p>
                 <div class="achievement-badge">
-                    <i class="fas fa-rocket"></i>
-                    Production Ready
+                    <i class="fas fa-users"></i>
+                    40K+ Users
                 </div>
             </div>
             <div class="achievement-item reveal">
-                <div class="achievement-date">2024</div>
-                <h3>Sui Move Bootcamp Hackathon - 2nd Place</h3>
-                <p>Won second place in the Sui Move Bootcamp hackathon with the Pollar project, demonstrating expertise in Move development and dApp architecture.</p>
+                <div class="achievement-date">2025</div>
+                <h3>Mantle-402 – npm Package Published</h3>
+                <p>Developed a 402 Payment Required-based payment system on Mantle network and published it as an npm package for developer integration.</p>
                 <div class="achievement-badge">
-                    <i class="fas fa-medal"></i>
-                    2nd Place
+                    <i class="fab fa-npm"></i>
+                    Published Package
                 </div>
             </div>
             <div class="achievement-item reveal">
-                <div class="achievement-date">2024</div>
-                <h3>Sui Overflow Hackathon Participation</h3>
-                <p>Participated in Sui Overflow Hackathon, building WriteBlock - a decentralized blogging platform with Walrus integration.</p>
+                <div class="achievement-date">2024 – Present</div>
+                <h3>B.Sc. in Computer Engineering</h3>
+                <p>Currently pursuing Computer Engineering degree at Manisa Celal Bayar University.</p>
             </div>
             <div class="achievement-item reveal">
-                <div class="achievement-date">2024</div>
-                <h3>Turkey's First Sui Move Bootcamp Graduate</h3>
-                <p>Completed Turkey's first official Sui Move Bootcamp, becoming one of the pioneer Move developers in the Turkish blockchain ecosystem.</p>
+                <div class="achievement-date">2023</div>
+                <h3>Associate Degree in Computer Programming</h3>
+                <p>Graduated from Ege University with a degree in Computer Programming.</p>
                 <div class="achievement-badge">
                     <i class="fas fa-graduation-cap"></i>
-                    Pioneer Graduate
+                    Graduate
                 </div>
-            </div>
-            <div class="achievement-item reveal">
-                <div class="achievement-date">2024</div>
-                <h3>Sui Workshop Assistant</h3>
-                <p>Assisted in conducting Sui workshops, helping onboard new developers to the Sui ecosystem and Move programming language.</p>
             </div>
         </div>
     </section>
@@ -1376,8 +1442,8 @@
     <section id="contact">
         <div class="contact-container">
             <div class="contact-info reveal">
-                <h2>Let's Build the <span style="background: var(--sui-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Future</span> Together</h2>
-                <p>I'm passionate about building on Sui and contributing to the Web3 ecosystem. Currently seeking internship opportunities at Mysten Labs to further develop my skills and make meaningful contributions.</p>
+                <h2>Let's Build the <span style="background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Future</span> Together</h2>
+                <p>I'm passionate about building production-level systems, AI-powered solutions, and Web3 integrations. Currently open to new opportunities and collaborations. Feel free to reach out!</p>
                 <div class="contact-links">
                     <a href="https://github.com/CemAyyildiz" target="_blank" class="contact-link">
                         <i class="fab fa-github"></i>
@@ -1410,8 +1476,8 @@
                 </div>
             </div>
             <div class="contact-visual reveal">
-                <div class="sui-logo-container">
-                    <span class="sui-text">Sui</span>
+                <div class="logo-container">
+                    <span class="logo-text">CA</span>
                 </div>
             </div>
         </div>
@@ -1421,7 +1487,7 @@
     <footer>
         <div class="footer-content">
             <p class="footer-text">
-                Built with 💙 for <span>Sui</span> by Cem Ayyıldız
+                Built with 💜 by <span>Cem Ayyıldız</span>
             </p>
             <div class="social-links">
                 <a href="https://github.com/CemAyyildiz" target="_blank" class="social-link" aria-label="GitHub">
@@ -1481,19 +1547,13 @@
             });
         });
 
-        // Mobile menu toggle (basic implementation)
+        // Mobile menu toggle
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const navLinks = document.querySelector('.nav-links');
         
         mobileMenuBtn?.addEventListener('click', () => {
             navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
         });
-
-        // Typing effect for code block (optional enhancement)
-        const codeContent = document.querySelector('.code-content');
-        if (codeContent) {
-            codeContent.style.opacity = '1';
-        }
     </script>
 </body>
 </html>
