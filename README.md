@@ -2,7 +2,7 @@
 
 # Hi, I'm Cem Ayyıldız
 
-### Computer Engineering · Software Developer · Production systems & Web3
+### Java Backend · Spring Boot · Enterprise systems · Web3 production experience
 
 [![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-cemayyildiz.github.io-6366F1?style=for-the-badge&logo=google-chrome&logoColor=white)](https://cemayyildiz.github.io/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayyildizcem/)
@@ -16,19 +16,23 @@
 
 ## About me
 
-I'm a **Computer Engineering** student at Manisa Celal Bayar University and **Software Developer** at OverBlock (Izmir). I build **production-grade** software — from backend APIs and real-time systems to **Web3** integrations and AI-powered platforms.
+I'm a **Computer Engineering** student at Manisa Celal Bayar University and **Software Developer** at OverBlock (Izmir).
 
-I've shipped code used by **40,000+ active users**, published an [**npm package**](https://www.npmjs.com/package/mantle-402), and debug systems from **logs and metrics**, not guesswork.
+My focus is **backend engineering in Java** — OOP, data structures, REST APIs, databases, and **Spring Boot** for enterprise-grade applications. I already have **production experience** shipping Web3 and full-stack products (**40K+ users**, published [**npm package**](https://www.npmjs.com/package/mantle-402)); now I'm going deep on the **Java backend stack** used in corporate environments.
 
-Currently deepening **Platform / SRE** skills: Linux, Docker, observability, CI/CD, and cloud — documented openly in my repos.
-
-```python
-engineer = {
-    "name": "Cem Ayyıldız",
-    "location": "Izmir, Turkey",
-    "focus": ["Backend", "Web3", "Platform / SRE"],
-    "stack": ["Java", "Python", "TypeScript", "Docker", "PostgreSQL"],
-    "debug": "logs → metrics → root cause",
+```java
+public record Engineer(
+    String name,
+    String location,
+    List<String> focus,
+    List<String> learning
+) {
+    static Engineer me = new Engineer(
+        "Cem Ayyıldız",
+        "Izmir, Turkey",
+        List.of("Java Backend", "REST APIs", "SQL", "Web3 (production)"),
+        List.of("Spring Boot", "JPA", "Microservices", "System design")
+    );
 }
 ```
 
@@ -36,10 +40,11 @@ engineer = {
 
 ## What I'm working on
 
-- **Production work** — backend APIs, deployments, and blockchain-integrated products at OverBlock
-- **Platform Engineering path** — infra, observability, and reliability (public learning in repo commits)
-- **B.Sc. Computer Engineering** — parallel programming, OOP, data structures
-- **Open to** — long-term internships and junior **Platform / Backend / SRE** roles (Spring 2026)
+- **Java backend mastery** — core Java, collections, concurrency, clean architecture
+- **Spring Boot** — REST APIs, JPA/Hibernate, security, testing, production patterns
+- **Production work** — backend APIs and blockchain-integrated systems at OverBlock
+- **B.Sc. Computer Engineering** — OOP, data structures, parallel programming
+- **Open to** — long-term internships and junior **Java / Backend** roles (Spring 2026)
 
 ---
 
@@ -47,26 +52,24 @@ engineer = {
 
 | Project | Description | Stack |
 |--------|-------------|-------|
-| [**mantle-402**](https://github.com/CemAyyildiz/mantle-402) | HTTP 402 payment flows on Mantle — published on **npm** for developer integration | TypeScript · Web3 · npm |
-| [**bountylane**](https://github.com/CemAyyildiz/bountylane) | AI multi-agent platform — agents assign and coordinate tasks end-to-end | TypeScript · AI · Full-stack |
-| [**WriteBlock**](https://github.com/CemAyyildiz/WriteBlock) | Decentralized content platform on Sui — optimized on-chain data structures | Move · TypeScript |
-| [**order-system**](https://github.com/CemAyyildiz/order-system) | Real-time restaurant order tracking — full-stack with live updates | TypeScript · Node.js · PostgreSQL |
-| [**NFTMarketPlace**](https://github.com/CemAyyildiz/NFTMarketPlace) | Decentralized marketplace — mint, buy, and sell NFTs on-chain | Solidity · Smart Contracts |
-| [**TelegramBot**](https://github.com/CemAyyildiz/TelegramBot) | Automated Telegram bot — replies, reactions, and group engagement | Python |
-| [**MovieManegament**](https://github.com/CemAyyildiz/MovieManegament) | Movie catalog app built with **data structures** (university project) | Java |
+| [**MovieManegament**](https://github.com/CemAyyildiz/MovieManegament) | Movie catalog app with **data structures** — core Java & OOP foundation | Java |
+| [**mantle-402**](https://github.com/CemAyyildiz/mantle-402) | HTTP 402 payment flows on Mantle — published on **npm** | TypeScript · Web3 |
+| [**WriteBlock**](https://github.com/CemAyyildiz/WriteBlock) | Decentralized content platform on Sui — on-chain data structures | Move · TypeScript |
+| [**NFTMarketPlace**](https://github.com/CemAyyildiz/NFTMarketPlace) | Decentralized NFT marketplace — mint, buy, sell on-chain | Solidity |
+| [**order-system**](https://github.com/CemAyyildiz/order-system) | Real-time restaurant order tracking — full-stack backend patterns | TypeScript · PostgreSQL |
+| [**bountylane**](https://github.com/CemAyyildiz/bountylane) | AI multi-agent platform — backend architecture & workflows | TypeScript · AI |
 
 <details>
 <summary><strong>More repos</strong> (Web3, mini-apps, coursework)</summary>
 
 | Repo | Notes |
 |------|--------|
-| [sentinel](https://github.com/CemAyyildiz/sentinel) | TypeScript application |
-| [shape-buyback-dashboard](https://github.com/CemAyyildiz/shape-buyback-dashboard) | Dashboard / analytics |
-| [time-attack-miniapp](https://github.com/CemAyyildiz/time-attack-miniapp) · [mini-games](https://github.com/CemAyyildiz/mini-games) | Mini-app / game projects |
-| [Stellink](https://github.com/CemAyyildiz/Stellink) · [SuiTree](https://github.com/CemAyyildiz/SuiTree) · [sui-counter](https://github.com/CemAyyildiz/sui-counter) | Sui ecosystem experiments |
-| [stellar-wallet](https://github.com/CemAyyildiz/stellar-wallet) · [dreamdex-trade-bot](https://github.com/CemAyyildiz/dreamdex-trade-bot) | Wallet & trading automation |
+| [sentinel](https://github.com/CemAyyildiz/sentinel) · [shape-buyback-dashboard](https://github.com/CemAyyildiz/shape-buyback-dashboard) | TypeScript apps |
+| [Stellink](https://github.com/CemAyyildiz/Stellink) · [SuiTree](https://github.com/CemAyyildiz/SuiTree) · [sui-counter](https://github.com/CemAyyildiz/sui-counter) | Sui / Move ecosystem |
+| [stellar-wallet](https://github.com/CemAyyildiz/stellar-wallet) · [dreamdex-trade-bot](https://github.com/CemAyyildiz/dreamdex-trade-bot) | Wallet & trading |
 | [workshop_nft](https://github.com/CemAyyildiz/workshop_nft) | Move NFT workshop |
-| [Stock-Trade-Simulator](https://github.com/CemAyyildiz/Stock-Trade-Simulator) | C# trading simulator |
+| [Stock-Trade-Simulator](https://github.com/CemAyyildiz/Stock-Trade-Simulator) | C# simulator |
+| [TelegramBot](https://github.com/CemAyyildiz/TelegramBot) | Early automation project |
 
 </details>
 
@@ -74,40 +77,40 @@ engineer = {
 
 ## Tech stack
 
-**Languages**
+**Primary focus**
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apachemaven&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
+
+**Production experience**
+
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white)
 ![Move](https://img.shields.io/badge/Move-4285F4?style=flat-square)
-![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=csharp&logoColor=white)
 
-**Backend & data**
+**Tools**
 
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![REST](https://img.shields.io/badge/REST_API-6366F1?style=flat-square)
-
-**Platform & tools** *(learning & applying)*
-
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![REST](https://img.shields.io/badge/REST_API-6366F1?style=flat-square)
 
 **Domains**
 
-`Web3` · `Smart Contracts` · `Backend APIs` · `Real-time systems` · `AI / Multi-agent` · `Platform / SRE`
+`Java Backend` · `Spring Boot` · `REST APIs` · `OOP` · `Data Structures` · `Web3` · `Smart Contracts`
 
 ---
 
 ## Highlights
 
 - **40K+** active users on production Web3 platform (Somiverse)
-- **npm** package published: [mantle-402](https://www.npmjs.com/package/mantle-402)
+- **npm** package: [mantle-402](https://www.npmjs.com/package/mantle-402)
 - Intern → **Software Developer** at OverBlock
+- Strong **Java / OOP / DS** foundation from university + [MovieManegament](https://github.com/CemAyyildiz/MovieManegament)
 - Student Representative · Quality Representative @ MCÜ
 
 ---
@@ -134,6 +137,6 @@ engineer = {
 
 <div align="center">
 
-*If you're hiring for junior backend, platform, or Web3-heavy roles — let's talk.*
+*Open to junior Java / Spring Boot / backend roles — with real production & blockchain experience behind me.*
 
 </div>

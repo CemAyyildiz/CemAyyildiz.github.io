@@ -6,38 +6,30 @@ GitHub → **Settings** → **Profile** veya profil sayfasında **Edit profile**
 
 ## Bio (Background) — max 160 karakter
 
-GitHub bio alanı **160 karakter** sınırı var. Aşağıdan birini seç.
-
-### Önerilen (İngilizce — global işverenler için)
+### Önerilen — Java / Spring Boot (güncel plan)
 
 ```
-Computer Engineering @ MCÜ · Software Developer @ OverBlock · 40K+ users in production · Platform/SRE path · Java · Python · Docker
+Computer Engineering @ MCÜ · Java Backend · Spring Boot · 40K+ users in production · Web3 experience · OverBlock
 ```
 
-*(159 karakter)*
+*(~115 karakter)*
 
-### Alternatif 1 — Web3 ağırlıklı
-
-```
-Software Developer · Production Web3 & backend (40K+ users) · npm author · CENG @ MCÜ · Java · Python · TypeScript · Docker
-```
-
-### Alternatif 2 — Platform/SRE odaklı
+### Alternatif 1 — Kurumsal Java vurgusu
 
 ```
-CENG student → Platform/SRE · Production systems (40K+ users) · Linux · Docker · observability · Java · Python · Izmir
+Java Backend Developer · Spring Boot · OOP & data structures · Production Web3 (40K+ users) · CENG @ MCÜ · Izmir
 ```
 
-### Alternatif 3 — Kısa ve net
+### Alternatif 2 — Kısa
 
 ```
-Building production systems · Web3 & backend · learning Platform/SRE · Java · Python · Docker · Open to internships
+Building enterprise Java backends · Spring Boot · Production systems & Web3 · Open to internships
 ```
 
-### Türkçe (LinkedIn veya kişisel kullanım; GitHub’da İngilizce önerilir)
+### Alternatif 3 — Blockchain + Java denge
 
 ```
-Bilgisayar Mühendisliği @ MCÜ · Yazılım Geliştirici @ OverBlock · 40K+ kullanıcılı prod sistemler · Platform/SRE yolunda
+Software Developer @ OverBlock · Java & Spring Boot · Web3 production (40K+ users, npm) · CENG @ MCÜ
 ```
 
 ---
@@ -52,49 +44,23 @@ Bilgisayar Mühendisliği @ MCÜ · Yazılım Geliştirici @ OverBlock · 40K+ k
 | **Website** | https://cemayyildiz.github.io/ |
 | **Social** | https://www.linkedin.com/in/ayyildizcem/ |
 
-**Twitter/X** (istersen): `https://x.com/lykanbtc`
+---
+
+## Pin'lenecek 6 repo (öneri — Java odaklı)
+
+1. `CemAyyildiz.github.io` — portföy
+2. `MovieManegament` — Java / data structures
+3. `mantle-402` — npm, production
+4. `NFTMarketPlace` veya `WriteBlock` — blockchain tecrübesi
+5. `order-system` — backend patterns
+6. `bountylane` — güncel proje
 
 ---
 
-## Repoların — hangisi ne?
-
-| Repo | Ne işe yarar |
-|------|----------------|
-| **[CemAyyildiz.github.io](https://github.com/CemAyyildiz/CemAyyildiz.github.io)** | Ana portföy — `index.html` + `README.md` burada |
-| **[CV](https://github.com/CemAyyildiz/CV)** | Eski / ayrı CV sitesi (Vercel) — ana portföy değil |
-| **CemAyyildiz** *(yok)* | Sadece `github.com/CemAyyildiz` profil sayfasında README göstermek için (opsiyonel) |
-
-**Senin ana repon:** `CemAyyildiz.github.io` → README’yi oraya push et.
-
----
-
-## Pin'lenecek 6 repo (öneri)
-
-Profil sayfasında **Customize your pins**:
-
-1. `CemAyyildiz.github.io` — portföy (ana)
-2. `mantle-402` — npm
-3. `bountylane` — AI
-4. `WriteBlock` — blockchain
-5. `order-system` — full-stack
-6. `TelegramBot` veya `MovieManegament`
-
-`CV` pin’leme — `github.io` zaten portföy.
-
----
-
-## Opsiyonel: profil ana sayfasında README
-
-`github.com/CemAyyildiz` açılınca büyük README istiyorsan → ayrı repo **`CemAyyildiz/CemAyyildiz`** oluşturman gerekir. Detay: [SETUP.md](SETUP.md)
-
----
-
-## Bio güncelleme (terminal — gh CLI)
-
-`gh` kurulu ve login ise:
+## Bio güncelleme (gh CLI)
 
 ```bash
-gh api -X PATCH user -f bio='Computer Engineering @ MCÜ · Software Developer @ OverBlock · 40K+ users in production · Platform/SRE path · Java · Python · Docker'
+gh api -X PATCH user -f bio='Computer Engineering @ MCÜ · Java Backend · Spring Boot · 40K+ users in production · Web3 experience · OverBlock'
 gh api -X PATCH user -f company='OverBlock'
 gh api -X PATCH user -f location='Izmir, Turkey'
 gh api -X PATCH user -f blog='https://cemayyildiz.github.io/'
@@ -102,10 +68,10 @@ gh api -X PATCH user -f blog='https://cemayyildiz.github.io/'
 
 ---
 
-## Eski bio (değiştirilecek)
+## Eski bio (değiştir)
 
 ```
 Computer Engineer with a passion for Web3, Blockchain, and Software Development. Experienced in SQL, Java, OOP, and Data Structures.
 ```
 
-**Sorun:** Güncel deneyimi (OverBlock, 40K users, npm, Platform yönü) yansıtmıyor. Yukarıdaki önerilen bio ile değiştir.
+Yeni odak: **Java backend + Spring Boot** (kurumsal), blockchain **tecrübe** olarak kalıyor, ana öğrenme yolu değil.
